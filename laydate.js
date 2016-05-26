@@ -1,4 +1,4 @@
-﻿/**
+/**
  
 @Name : layDate v1.0 日期控件
 @Author: 贤心
@@ -359,6 +359,8 @@ YYYY年MM月DD日
 		+ '<div class="laydate_bottom">' + '<ul id="laydate_hms">' + '<li class="laydate_sj">时间</li>' + '<li><input value="00" readonly>:</li>' + '<li><input value="00" readonly>:</li>' + '<li><input value="00" readonly></li>' + "</ul>" + '<div class="laydate_time" id="laydate_time"></div>' + '<div class="laydate_btn">' + '<a id="laydate_clear">清空</a>' 
 		+ '<a id="laydate_today">今天</a>'
 		+ '<a id="laydate_ok">确认</a>' + "</div>" + (b.isv ? '<a href="http://sentsin.com/layui/laydate/" class="laydate_v" target="_blank">laydate-v' + laydate.v + "</a>" : "") + "</div>", d.body.appendChild(i), c.box = g("#" + h[0]), c.events(), i = null),
+        // c.shde(c.query("#laydate_MM"), true),   
+        c.shde(c.query("#laydate_MM"),f.isMonth?true:false), //是否隐藏月
        c.shde(c.query("#laydate_table"),f.isDay?false:true),   
 	   c.shde(c.query("#laydate_today"),f.isDay?false:true),   
 	   c.follow(c.box),
