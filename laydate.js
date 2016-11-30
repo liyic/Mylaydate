@@ -175,6 +175,7 @@ Dates.run = function(options){
 	{
 		//elem[as.elemv] = laydate.now(null, options.format || config.format);   //如果目标对象的值为空，则填充当前时间;暂时不用，保留空
 	}
+	
     if(even && target.tagName){
         if(!elem || elem === Dates.elem){
             return;
