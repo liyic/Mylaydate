@@ -171,8 +171,10 @@ Dates.run = function(options){
     elem = options.elem ? S(options.elem) : target;
 
     as.elemv = /textarea|input/.test(elem.tagName.toLocaleLowerCase()) ? 'value' : 'innerHTML';
-    if (('init' in options ? options.init : config.init) && (!elem[as.elemv])) elem[as.elemv] = laydate.now(null, options.format || config.format);
-
+    if (('init' in options ? options.init : config.init) && (!elem[as.elemv])) 
+	{
+		//elem[as.elemv] = laydate.now(null, options.format || config.format);   //如果目标对象的值为空，则填充当前时间;暂时不用，保留空
+	}
     if(even && target.tagName){
         if(!elem || elem === Dates.elem){
             return;
