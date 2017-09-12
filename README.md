@@ -5,4 +5,4 @@
 
 2.年份列表的排列方式，改为纵向排列，且每一列都是0-9递增，更易选择。
 
-项目demo:http://www.melebao.net/test/mylaydate/laydate.html
+项目demo:http://boyalab.com/test/Mylaydate/
